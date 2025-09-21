@@ -1,62 +1,91 @@
-# Welcome to your Lovable project
+
 
 ## Project info
 
 **URL**:(https://zenflow-youth.lovable.app)
 
-## How can I edit this code?
+# Youth Mental Wellness App — README.md
 
-There are several ways of editing your application.
+> A cross-platform mental wellness companion for youth combining AI-powered support, community care, self-help tools and emergency resources.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/da50998c-1e4f-41f6-b2d0-a69da3b3710b) and start prompting.
+## Table of Contents
+1. [Project Overview](#project-overview)  
+2. [Features](#features)  
+3. [Tech Stack](#tech-stack)  
+4. [Repository Layout](#repository-layout)  
+5. [Quickstart (Run locally)](#quickstart-run-locally)  
+   - [Frontend (React)](#frontend-react)  
+   - [Mobile (React Native / Expo) — optional](#mobile-react-native--expo-optional)  
+   - [Backend (Node.js + Express example)](#backend-nodejs--express-example)  
+   - [Using Firebase (alternative backend)](#using-firebase-alternative-backend)  
+6. [Environment Variables (.env example)](#environment-variables-env-example)  
+7. [API & AI Integration Notes](#api--ai-integration-notes)  
+8. [Testing](#testing)  
+9. [Deployment](#deployment)  
+10. [Security & Privacy](#security--privacy)  
+11. [Contributing](#contributing)  
+12. [License](#license)  
+13. [Contact / Credits](#contact--credits)
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Project Overview
+**Youth Mental Wellness App** is designed to give young people an accessible, stigma-free place for mental health support. The app blends:
+- 24/7 **AI chatbot** for listening & coping suggestions,  
+- **Community care** spaces and mentor support,  
+- **Self-care toolkit** (journaling, meditations, mood tracker),  
+- **Emergency features** (SOS, helplines, fallback SMS).
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Features
+- Secure registration & role-based access (User / Mentor / Admin)  
+- AI-driven personalized recommendations and conversation flows  
+- Mood tracking & progress charts  
+- Community groups with anonymous posting option  
+- Daily reminders, guided exercises, journaling  
+- SOS / Crisis support integration (helpline, location share)  
+- Activity logs for admin (audit trail, exportable .txt)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Tech Stack
+- **Frontend (Web):** React (Vite or CRA)  
+- **Mobile (optional):** React Native with Expo  
+- **Backend:** Node.js + Express (example) — can swap for FastAPI or Django  
+- **DB:** MongoDB (Atlas) or Firebase Firestore  
+- **Auth:** JWT (backend) or Firebase Auth  
+- **AI/NLP:** OpenAI (or any LLM provider)  
+- **Hosting:** Vercel / Netlify (frontend), Heroku / Render / Railway / AWS (backend)  
+- **Storage:** AWS S3 / Firebase Storage for media
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Repository Layout (suggested)
+/ (repo root)
+├─ frontend/ # React web app
+│ ├─ src/
+│ ├─ public/
+│ └─ package.json
+├─ mobile/ # Optional: Expo React Native app
+├─ backend/ # Node.js + Express API
+│ ├─ src/
+│ └─ package.json
+├─ docs/
+└─ README.md
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## Quickstart (Run locally)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+> These instructions assume you have Node.js (>=16), npm or yarn, and Git installed.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Frontend (React)
+1. Open terminal → clone & install:
+   ```bash
+   git clone <REPO_URL>
+   cd <REPO_ROOT>/frontend
+   npm install
 
