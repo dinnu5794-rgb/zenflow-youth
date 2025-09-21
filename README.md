@@ -10,26 +10,6 @@
 
 ---
 
-## Table of Contents
-1. [Project Overview](#project-overview)  
-2. [Features](#features)  
-3. [Tech Stack](#tech-stack)  
-4. [Repository Layout](#repository-layout)  
-5. [Quickstart (Run locally)](#quickstart-run-locally)  
-   - [Frontend (React)](#frontend-react)  
-   - [Mobile (React Native / Expo) — optional](#mobile-react-native--expo-optional)  
-   - [Backend (Node.js + Express example)](#backend-nodejs--express-example)  
-   - [Using Firebase (alternative backend)](#using-firebase-alternative-backend)  
-6. [Environment Variables (.env example)](#environment-variables-env-example)  
-7. [API & AI Integration Notes](#api--ai-integration-notes)  
-8. [Testing](#testing)  
-9. [Deployment](#deployment)  
-10. [Security & Privacy](#security--privacy)  
-11. [Contributing](#contributing)  
-12. [License](#license)  
-13. [Contact / Credits](#contact--credits)
-
----
 
 ## Project Overview
 **Youth Mental Wellness App** is designed to give young people an accessible, stigma-free place for mental health support. The app blends:
